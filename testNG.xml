@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="SON Test on Chrome">
+        <parameter name="browserName" value="${BrowserName}"/>
+        <parameter name="Url" value="${url}"></parameter>
+        <parameter name="Username" value="${userName}"></parameter>
+        <parameter name="Password" value="${passWord}"></parameter>
+        <parameter name="policy_number" value="${PolicyNumber}"></parameter>
+        <parameter name="author" value="${author}"></parameter>
+        <classes>
+            <class name="testCase.LoginPageTest"></class>
+            <class name="testCase.EndToEndTest"></class>
+        </classes>
+    </test>
+</suite>
