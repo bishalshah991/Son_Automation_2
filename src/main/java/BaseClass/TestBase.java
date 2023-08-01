@@ -81,9 +81,11 @@ public class TestBase {
         switch (browser.toLowerCase(Locale.ROOT))
         {
             case "chrome":
-                ChromeOptions ops = new ChromeOptions();
-                ops.addArguments("--remote-allow-origins=*");
-                driver = new ChromeDriver(ops);
+//                ChromeOptions ops = new ChromeOptions();
+//                ops.addArguments("--remote-allow-origins=*");
+//                driver = new ChromeDriver(ops);
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
