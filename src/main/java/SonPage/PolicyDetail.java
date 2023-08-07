@@ -60,6 +60,7 @@ public class PolicyDetail extends BasePage {
         WaitForPresenceOfElement(TextNatural,10);
         click(TextNatural);
         click(StartClaimButton);
+        WaitForPresenceOfElement(NonSelected,10);
     }
 
     /*

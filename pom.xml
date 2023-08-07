@@ -36,6 +36,7 @@
                         <BrowserName>${BrowserName}</BrowserName>
                         <Url>${url}</Url>
                         <PolicyNumber>${PolicyNumber}</PolicyNumber>
+                        <PolicyNumber1>${PolicyNumber1}</PolicyNumber1>
                         <Author>${author}</Author>
                     </systemPropertyVariables>
                     <suiteXmlFiles>testNG.xml</suiteXmlFiles>

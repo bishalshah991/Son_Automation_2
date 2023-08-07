@@ -7,10 +7,12 @@
         <parameter name="Username" value="${userName}"></parameter>
         <parameter name="Password" value="${passWord}"></parameter>
         <parameter name="policy_number" value="${PolicyNumber}"></parameter>
+        <parameter name="policy_number1" value="${PolicyNumber1}"></parameter>
         <parameter name="author" value="${author}"></parameter>
         <classes>
             <class name="testCase.LoginPageTest"></class>
-            <class name="testCase.EndToEndTest"></class>
+            <class name="testCase.End_To_End_Setup_Test"></class>
+            <class name="testCase.End_to_Setup_Void_Test"></class>
         </classes>
     </test>
 </suite>

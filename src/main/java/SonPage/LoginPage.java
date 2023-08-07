@@ -28,14 +28,14 @@ public class LoginPage extends TestBase {
     public WebElement LoginButton;
 
     @FindBy(xpath = "//div[@class='advanced-pie chart']")
-    WebElement PaymentOverview;
+    public WebElement PaymentOverview;
 
     @FindBy(css = "div[id='dashboard-analytics']>div[class='content ng-tns-c512-6']")
     public WebElement ClaimActivity;
 
-    @FindBy(xpath = "//mat-icon[contains(text(),'keyboard_arrow_down')]")
+    @FindBy(xpath = "//mat-icon[normalize-space()='keyboard_arrow_down']")
     public WebElement LogoutArrow;
-    @FindBy(xpath = "//span[contains(text(),'Sign Out')]")
+    @FindBy(xpath = "//span[normalize-space()='Sign Out']")
     public WebElement Sign_out_text;
 
 

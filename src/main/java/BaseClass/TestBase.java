@@ -71,7 +71,7 @@ public class TestBase {
 
     @AfterTest
     public void Quit() throws IOException, InterruptedException {
-        //PageDriver.getCurrentDriver().quit();
+        PageDriver.getCurrentDriver().quit();
     }
 
     public void LaunchBrowser(String browser,String Url) throws IOException, ParseException {
@@ -132,6 +132,4 @@ public class TestBase {
         }
         extentTest.assignCategory(m.getAnnotation(Test.class).groups());
     }
-
-
 }

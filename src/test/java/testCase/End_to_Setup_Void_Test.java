@@ -2,10 +2,8 @@ package testCase;
 
 import BaseClass.TestBase;
 import Helper.PolicySearch;
-import PageObject.EndToEnd;
-import SonPage.ClaimInformation;
+import PageObject.EndToEnd_Setup;
 import SonPage.LoginPage;
-import SonPage.PolicyDetail;
 import Utility.ReadJSonData;
 import org.json.simple.parser.ParseException;
 import org.testng.ITestContext;
@@ -15,12 +13,13 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class EndToEndTest extends TestBase {
+public class End_to_Setup_Void_Test extends TestBase {
+
     String path=System.getProperty("user.dir")+ File.separator +"TestData"+File.separator +"son.json";
 
-    @Parameters("PolicyNumber")
+    @Parameters("PolicyNumber1")
     @Test
-    public void LoginToApplication(ITestContext context, String PolicyNumber) throws IOException, ParseException, InterruptedException {
+    public void Verify_the_functionality_void(ITestContext context, String PolicyNumber1) throws IOException, ParseException, InterruptedException {
         ReadJSonData readJSonData = new ReadJSonData();
         String U_name = readJSonData.Read_the_value_from_json(path,"Username");
         String P_password = readJSonData.Read_the_value_from_json(path,"Password");
@@ -29,23 +28,20 @@ public class EndToEndTest extends TestBase {
 
         PolicySearch policySearch = new PolicySearch();
         policySearch.PolicySearchTab();
-        //policySearch.WaitForActive(PolicyNumber);
-        policySearch.WaiForNeedsRequirement(PolicyNumber);
+        policySearch.WaitForActive(PolicyNumber1);
 
-        EndToEnd endToEnd = new EndToEnd();
-        endToEnd.AddBeneficiary();
-        endToEnd.InBoxTab();
-        endToEnd.View_check_list();
-        endToEnd.Assign_to_me_tab();
-        endToEnd.Enter_Payee();
+        EndToEnd_Setup endToEndSetup = new EndToEnd_Setup();
+        endToEndSetup.Policy_Detail();
+        endToEndSetup.Claim_Information();
+        endToEndSetup.Navigate_Add_Beneficiary();
+        endToEndSetup.Navigate_to_Inbox();
+        endToEndSetup.Navigate_to_view_check_list();
+        endToEndSetup.Upload_file_document();
+        endToEndSetup.Navigate_to_match();
+        endToEndSetup.Navigate_void_setup();
         policySearch.PolicySearchTab();
-        policySearch.CheckStatus(PolicyNumber);
+        policySearch.CheckVoidStatus(PolicyNumber1);
+        policySearch.Dashboard();
         loginPage.LogoutFromApplication();
     }
-
-
-
-
-
-
 }
