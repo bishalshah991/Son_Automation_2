@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">UAT Automation Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 7, 2023 01:56:58 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 10, 2023 05:05:51 AM</span></a>
 </li>
 </ul>
 </div>
@@ -108,7 +108,7 @@
           <div class="test-detail">
             <p class="name">SON Test on Chrome</p>
             <p class="text-sm">
-              <span>1:57:05 PM</span> / <span>00:03:04:568</span>
+              <span>5:06:01 AM</span> / <span>00:04:45:836</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -117,9 +117,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">SON Test on Chrome</h5>
-<span class='badge badge-success'>08.07.2023 1:57:05 PM</span>
-<span class='badge badge-danger'>08.07.2023 2:00:09 PM</span>
-<span class='badge badge-default'>00:03:04:568</span>
+<span class='badge badge-success'>08.10.2023 5:06:01 AM</span>
+<span class='badge badge-danger'>08.10.2023 5:10:47 AM</span>
+<span class='badge badge-default'>00:04:45:836</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -137,32 +137,31 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:57:08 PM</td>
+        <td>5:06:04 AM</td>
         <td>
           LoginToApplicationis Passed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:59:03 PM</td>
+        <td>5:08:13 AM</td>
         <td>
           End_to_end_setupis Passed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:00:09 PM</td>
+        <td>5:10:47 AM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.170)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@id='reason']"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d343d2af7e33ee757f09535ed06b5e5e, clickElement {id=75224B56B0FCA0CA6C84FC2B195A316C_element_772}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\bisha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52535/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d343d2af7e33ee757f09535ed06b5e5e)] -> xpath: //span[contains(text(),'CONFIRM')]]
-Session ID: d343d2af7e33ee757f09535ed06b5e5e
+Command: [4aa4dbbb0c8008c1d5daa99935bdd030, findElement {using=xpath, value=//textarea[@id='reason']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\bisha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59469/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4aa4dbbb0c8008c1d5daa99935bdd030
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -174,10 +173,12 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at SonPage.BasePage.click(BasePage.java:47)
-	at SonPage.AssignToMe.Void_setup(AssignToMe.java:158)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at SonPage.BasePage.type(BasePage.java:27)
+	at SonPage.AssignToMe.Void_setup(AssignToMe.java:157)
 	at PageObject.EndToEnd_Setup.Navigate_void_setup(EndToEnd_Setup.java:94)
 	at testCase.End_to_Setup_Void_Test.Verify_the_functionality_void(End_to_Setup_Void_Test.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -243,12 +244,12 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -262,7 +263,7 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:57:05 PM</td>
+<td>05:06:01 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>SON Test on Chrome</a>
 </td>
@@ -311,7 +312,7 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:57:05 PM</td>
+<td>05:06:01 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>SON Test on Chrome</a>
 </td>
@@ -360,7 +361,7 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:57:05 PM</td>
+<td>05:06:01 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>SON Test on Chrome</a>
 </td>
@@ -382,13 +383,13 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 7, 2023 01:56:58 PM</h3>
+<h3>Aug 10, 2023 05:05:51 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 7, 2023 02:00:09 PM</h3>
+<h3>Aug 10, 2023 05:10:47 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -458,7 +459,7 @@ Session ID: d343d2af7e33ee757f09535ed06b5e5e
 </div></div>
 <script>
 var timeline = {
-"SON Test on Chrome":184.568
+"SON Test on Chrome":285.836
 };
 </script>
 <div class="row">
