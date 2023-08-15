@@ -28,7 +28,7 @@ public class AssertionHelper extends BasePage {
         try {
             String actualText=element.getText();
             if(actualText.equals(expectedText)) {
-                System.out.println("Actual Text is :"+actualText+ "Expected Text is : "+expectedText);
+                System.out.println("Actual Text is :" + actualText + "Expected Text is : "+expectedText);
                 return flag=true;
             }
             else {
