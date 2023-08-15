@@ -81,6 +81,7 @@ public class TestBase {
         switch (browser.toLowerCase(Locale.ROOT))
         {
             case "chrome":
+                WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.setHeadless(false);
                 options.addArguments("start-maximized"); // open Browser in maximized mode
